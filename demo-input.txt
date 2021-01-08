@@ -1,0 +1,30 @@
+// demo-input.txt: commands to run the demo
+
+// Version 1.0
+// Fri Jan 8th 2021
+// schmidtst@vmware.com
+
+// lines beginning with / are treated as comment
+
+// next line will be displayed and can serve as demo comment
+# test input file for demo-shell.sh
+
+// the obvious :)
+# say hello
+$ echo "Hello World"
+
+// the next two lines will display
+// then you need to hit <RET>
+// to execute the second line
+# list the directory
+$ ls -al
+
+// try to create a .secrets file in the current directory
+// and set DOCKER_PASSWORD to some value
+# show env variable DOCKER_PASSWORD from .secrets file
+$ echo $DOCKER_PASSWORD
+
+// we will now set it to a new value without showing it
+; export DOCKER_PASSWORD="Goood.12"
+# did the Docker password change? 
+$ echo $DOCKER_PASSWORD
